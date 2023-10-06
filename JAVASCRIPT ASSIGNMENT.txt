@@ -1,0 +1,83 @@
+JAVASCRIPT ASSIGNMENT
+JAHANVI PIPALIYA
+
+1.What is JavaScript?
+->Javascript is a lightweight object-oriented programming language which is used by several websites for scripting the webpages.it was introduced in the year 1995 for adding programs to the webpages.with javascript,users can build modern web applications to interact directly without reloading the page every time.the traditional websites uses js to provide several forms of interactivity and simplicity.
+
+2.What is the use of isNaN function?
+->The isNaN() function is used to check whether a given value is an illegal number ot not.it returns true if the value is a NAN and false otherwise.the function is different from the Number.isNaN() method.
+
+3.What is negative Infinity?
+->The negative infinity in javascript is a constant value that is used to represent a value that is the lowest available.this means that no other number is lesser than this value.it can be generated using a self-made function or by an arithmetic operation.
+
+4. Which company developed JavaScript?
+->Javascript is a scripting language developed by Netscape.
+
+5.What are undeclared and undefined variables?
+->Undeclared: it occurs when we try to access any variable that is not initialized or declared earlier using the var and const keyword.
+Undeclared: it occurs when a variable has been declared but has not been assigned any value.undefined is not a keyword.
+
+6.Write the code for adding new elements dynamically?
+->
+
+7.What is the difference between ViewState and SessionState?
+->ViewState: It is maintained at only one level that is page-level. Changes made on a single page is not visible on other pages. Information that is gathered in view state is stored for the clients only and cannot be transferred to any other place. View state is synonymous with serializable data only.
+SessionState: It is maintained at session-level and data can be accessed across all pages in the web application. The information is stored within the server and can be accessed by any person that has access to the server where the information is stored.
+
+8.What is === operator?
+-> Compares the equality of two operands with type. If both value and type are equal then the condition is true otherwise false.
+
+9.How can the style/class of an element be changed?
+->
+
+10.How to read and write a file using JavaScript?
+->The fs.readFile() and rs.writeFile() methods are used to read and write of a file using javascript. 
+The file is read using the fs.readFile() function, which is an inbuilt method. This technique reads the full file into memory and stores it in a buffer. 
+The fs.writeFile() function is used to write data to a file in an asynchronous manner. If the file already exists, it will be replaced.
+
+11.What are all the looping structures in JavaScript?
+->for loop:for (initialization; condition; increment)  
+{  
+    code to be executed  
+}  
+while loop:while (condition)  
+{  
+    code to be executed  
+}  
+do-while loop:do{  
+    code to be executed  
+}while (condition);  
+
+12.How can you convert the string of any base to an integer in JavaScript?
+->Following is the syntax that a user may use to convert a string into any base to an integer in JavaScript-parseInt(string_value, base)
+
+13.What is the function of the delete operator?
+->The JavaScript pop(), shift(), or splice() methods are available to delete an element from an array. But because of the key-value pair in an object, deleting is more complicated. Note that, the delete operator only works on objects and not on variables or functions.    
+
+14.What are all the types of Pop up boxes available in JavaScript?
+->There are three types of pop-up boxes in JavaScript namely Alert Box, Confirm Box and Prompt Box.
+Alert Box: It is used when a warning message is needed to be produced. When the alert box is displayed to the user, the user needs to press ok and proceed.
+Syntax: 
+alert("your Alert here")
+Prompt Box: It is a type of pop up box which is used to get the user input for further use. After entering the required details user have to click ok to proceed next stage else by pressing the cancel button user returns the null value.
+Syntax:  
+prompt("your Prompt here")
+Confirm Box: It is a type of pop-up box that is used to get authorization or permission from the user. The user has to press the ok or cancel button to proceed.
+Syntax:
+confirm("your query here")
+
+15.What is the use of Void (0)?
+-> It is often used when inserting an expression in a web page might produce some unwanted effect. To remove this effect, “javascript:void(0)” is used. This expression returns undefined primitive value. This is often used with hyperlinks. Sometimes, you will decide to call some JavaScript from inside a link. Normally, when you click a link, the browser loads a brand new page or refreshes the same page (depending on the URL specified). But you most likely don’t desire this to happen if you have hooked up some JavaScript thereto link. To prevent the page from refreshing, you could use void(0).
+
+16.How can a page be forced to load another page in JavaScript?
+-> We can use window.location property inside the script tag to forcefully load another page in Javascript. It is a reference to a Location object that is it represents the current location of the document. We can change the URL of a window by accessing it.
+Syntax:
+ <script>
+    window.location = <Path / URL>
+</script>
+
+17.What are the disadvantages of using innerHTML in JavaScript?
+->The use of innerHTML very slow: The process of using innerHTML is much slower as its contents as slowly built, also already parsed contents and elements are also re-parsed which takes time.
+Preserves event handlers attached to any DOM elements: The event handlers do not get attached to the new elements created by setting innerHTML automatically. To do so one has to keep track of the event handlers and attach it to new elements manually. This may cause a memory leak on some browsers.
+Content is replaced everywhere: Either you add, append, delete or modify contents on a webpage using innerHTML, all contents is replaced, also all the DOM nodes inside that element are reparsed and recreated.
+Appending to innerHTML is not supported: Usually, += is used for appending in JavaScript. But on appending to an Html tag using innerHTML, the whole tag is re-parsed.
