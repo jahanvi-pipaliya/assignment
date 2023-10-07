@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 700px;
+            width: 500px;
+            background-color: aquamarine;
+            border-radius: 50%;
+            margin: auto;
+            position: relative;
+        }
+        .upper{
+            height: 50px;
+            width: 250px;
+            background-image: url(upper.png);
+            background-size: 100% 100%;
+            position: absolute;
+            top: 42.9%;
+            left: 25%;
+            animation-name: open;
+            animation-duration: 2s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+        }
+        .lower{
+            height: 200px;
+            width: 200px;
+            background-image: url(lower.png);
+            background-size: 100% 100%;
+            position: absolute;
+            top: 50%;
+            left: 30%;    
+        }
+        /* @keyframes open{
+            0%{ top: 42.9%;
+            left: 25%;}
+            33%{transform: translateX(-220px) rotate(-30deg);}
+            66%{transform: translateX(-220px) translateY(220px) rotate(-30deg);}
+            100%{}
+        } */
+
+        @keyframes open {
+  0%,
+  42% {
+   transform: translate3d(-50%, 0%, 0) rotate(0deg);
+            transform: translate3d(-50%, 0%, 0) rotate(0deg);
+  }
+  60% {
+    transform: translate3d(-85%, -230%, 0) rotate(-25deg);
+            transform: translate3d(-85%, -230%, 0) rotate(-25deg);
+  }
+  90%, 100% {
+   transform: translate3d(-63%, 225%, 0) rotate(-70deg);
+            transform: translate3d(-63%, 225%, 0) rotate(-70deg);
+  }
+}
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="upper"></div>
+        <div class="lower"></div>
+    </div>
+</body>
+</html>

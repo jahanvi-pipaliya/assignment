@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .main{
+            height: 700px;
+            width: 300px;
+            background-image: url(me1.jpg);
+            background-size: auto;
+            display: flex;
+            position: relative;
+            margin: auto;
+        }
+        .left{
+            height: 700px;
+            width: 150px;
+            background-color:brown;
+            transition: all 4s;
+            transform-origin: left;
+        }
+        .right{
+            height: 700px;
+            width: 150px;
+            background-color:burlywood;
+            transition: all 4s;
+            transform-origin: right;
+        }
+        .left:hover{
+            transform: perspective(30px) rotateY(45deg);
+        }
+        .right:hover{
+            transform: perspective(30px) rotateY(-45deg);
+        }
+        .circle{
+            height: 50px;
+            width: 50px;
+            border: 2px solid black;
+            border-radius: 50%;
+            position: absolute;
+
+        }
+        .janu{
+            margin-top: 350px;
+            margin-left: 95px;
+        }
+        .arsi{
+            margin-top: 350px;
+            
+        }
+
+    </style>
+</head>
+<body>
+    
+          <div class="main">
+             <div class="left"><span class="circle janu"></span></div>
+             <div class="right"><span class="circle arsi"></span></div>
+         </div>
+   
+  
+</body>
+</html>

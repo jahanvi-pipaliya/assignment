@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .apple{
+            height: 300px;
+            width: 300px;
+            border: 2px solid black;
+            background-image: url(apple.jpeg);
+            background-size: 100%;
+            position: absolute;
+            z-index: 4;
+            box-shadow: 5px 5px 5px;
+        }
+        .mango{
+            height: 300px;
+            width: 300px;
+            border: 2px solid black;
+            border-radius: 50%;
+            background-image: url(mango.jpeg);
+            background-size: 100%;
+            position: absolute;
+            left: 150px;
+            top: 150px;
+            z-index: 3;
+            box-shadow: 5px 5px 5px;
+        }
+        .pinaple{
+            height: 300px;
+            width: 300px;
+            border: 2px solid black;
+            border-bottom-right-radius: 300px;
+            background-image: url(pinaple.jpeg);
+            background-size: 100%;
+            position: absolute;
+            left: 300px;
+            top: 300px;
+            box-shadow: 5px 5px 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="apple"></div>
+        <div class="mango"></div>
+        <div class="pinaple"></div>
+    </div>
+</body>
+</html>

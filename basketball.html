@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .circle{
+            background-color: blueviolet;
+            height: 70px;
+            width: 70px;
+            border: 2px solid red;
+            border-radius: 50%;
+            animation-name: ball;
+            animation-duration: 10s;
+            animation-delay: 1s;
+            position: absolute;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-fill-mode: both;
+        }
+        @keyframes ball {
+            0%{
+                top: 0%;
+            }
+            10%{transform: translate(150px,640px);}
+            20%{transform: translate(300px,20px);}
+            30%{transform: translate(450px,640px);}
+            40%{transform: translate(600px,40px);}
+            50%{transform: translate(750px,640px);}
+            60%{transform: translate(900px,60px);}
+            70%{transform: translate(1050px,640px);}
+            80%{transform: translate(1300px,80px);}
+            90%{transform: translate(1450px,640px);}
+            100%{transform: translate(1600px,100px);}
+               
+        }
+        img{
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="circle"></div>
+    <div class="basket"><img src="bcourt.jpeg" alt=""></div>
+</body>
+</html>
